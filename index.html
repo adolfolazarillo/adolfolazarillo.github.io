@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Concesionario de Coches</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .car-gallery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .car-card {
+            background-color: white;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .car-card:hover {
+            transform: scale(1.05);
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .car-card h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #4CAF50;
+        }
+
+        .car-card p {
+            font-size: 1em;
+            margin: 5px 0;
+            color: #777;
+        }
+
+        .car-card .price {
+            font-size: 1.2em;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .car-card button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .car-card button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Concesionario de Coches</h1>
+        <p>Encuentra el coche de tus sueños</p>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#home">Inicio</a>
+        <a href="#cars">Coches Disponibles</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Sección de coches -->
+        <section id="cars">
+            <h2 class="section-title">Coches Disponibles</h2>
+
+            <div class="car-gallery">
+                <!-- Coche 1 -->
+                <div class="car-card">
+                    <img src="descarga.jpg" alt="Ford Mustang">
+                    <h3>Ford Mustang</h3>
+                    <p>Deportivo, 2 puertas, motor V8</p>
+                    <p class="price">$45,000</p>
+                    <button onclick="alert('Ford Mustang: Un coche deportivo de alto rendimiento.')">Ver Detalles</button>
+                </div>
+
+                <!-- Coche 2 -->
+                <div class="car-card">
+                    <img src="descarga.jpg" alt="Chevrolet Camaro">
+                    <h3>Chevrolet Camaro</h3>
+                    <p>Deportivo, motor V6</p>
+                    <p class="price">$42,000</p>
+                    <button onclick="alert('Chevrolet Camaro: Un coche con diseño agresivo y gran potencia.')">Ver Detalles</button>
+                </div>
+
+                <!-- Coche 3 -->
+                <div class="car-card">
+                    <img src="EL_EJIDO_NUEVO_CONCE-2.jpg" alt="Tesla Model S">
+                    <h3>Tesla Model S</h3>
+                    <p>Sedan, eléctrico, 4 puertas</p>
+                    <p class="price">$75,000</p>
+                    <button onclick="alert('Tesla Model S: Un coche eléctrico de lujo con tecnología avanzada.')">Ver Detalles</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="contact">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-form">
+                <input type="text" id="name" placeholder="Tu nombre" required>
+                <input type="email" id="email" placeholder="Tu correo electrónico" required>
+                <textarea id="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                <button onclick="submitForm()">Enviar</button>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Concesionario de Coches | Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        // Función para manejar el envío del formulario
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert(`Gracias por tu mensaje, ${name}! Nos pondremos en contacto contigo pronto.`);
+            } else {
+                alert('Por favor, completa todos los campos.');
+            }
+        }
+    </script>
+
+</body>
+</html>

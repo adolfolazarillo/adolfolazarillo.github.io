@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Concesionario de Coches</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card h3 {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .card .price {
+            font-size: 18px;
+            color: #4CAF50;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .card button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Concesionario de Coches</h1>
+        <p>Encuentra tu coche ideal con nosotros</p>
+    </header>
+
+    <div class="container">
+        <div class="card-container">
+            <!-- Coche 1 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/280x200?text=Coche+1" alt="Coche 1">
+                <div class="card-content">
+                    <h3>Ford Mustang</h3>
+                    <p>Deportivo, 2 puertas, motor V8</p>
+                    <p class="price">$45,000</p>
+                    <button>Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- Coche 2 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/280x200?text=Coche+2" alt="Coche 2">
+                <div class="card-content">
+                    <h3>Chevrolet Camaro</h3>
+                    <p>Deportivo, 2 puertas, motor V6</p>
+                    <p class="price">$42,000</p>
+                    <button>Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- Coche 3 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/280x200?text=Coche+3" alt="Coche 3">
+                <div class="card-content">
+                    <h3>Tesla Model S</h3>
+                    <p>Sedan, eléctrico, 4 puertas</p>
+                    <p class="price">$75,000</p>
+                    <button>Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- Coche 4 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/280x200?text=Coche+4" alt="Coche 4">
+                <div class="card-content">
+                    <h3>BMW M3</h3>
+                    <p>Deportivo, motor de 6 cilindros</p>
+                    <p class="price">$55,000</p>
+                    <button>Ver más detalles</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Concesionario de Coches | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
